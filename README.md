@@ -73,7 +73,7 @@ Sistem klasifikasi citra batik berbasis machine learning yang mampu mengenali je
     </tr>
   </table>
   <br>
-  <img src="github_asset/model_perform.png" alt="cc" width="595" height="295">
+  <img src="https://ragam-assets.s3.ap-southeast-2.amazonaws.com/Screenshot+2025-06-05+204539.jpg" alt="cc" width="595" height="295">
   </div>
 </body>
 </html>
