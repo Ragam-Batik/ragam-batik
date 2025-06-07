@@ -25,8 +25,9 @@ Sistem klasifikasi citra batik berbasis machine learning yang mampu mengenali je
 </head>
 <body>
   <div style="display: flex; justify-content: space-between;">
-  <h3> Machine Learning (ML) : </h3>
-  <h5> Machine Learning Model and Training History</h5>
+  <h1> Machine Learning (ML) : </h1>
+  <p style='text-align: justify;'>Kami telah meningkatkan performa model EfficientNet-B0 yang telah dilatih sebelumnya dengan menerapkan teknik augmentasi data dan mengintegrasikannya ke dalam arsitektur khusus yang disesuaikan dengan dataset dan tujuan spesifik kami. EfficientNet-B0 digunakan sebagai tulang punggung (backbone), sementara lapisan tambahan yang kami rancang secara khusus memungkinkan keseimbangan antara kemampuan generalisasi fitur dari model pralatih dan adaptasi terhadap domain spesifik, sehingga meningkatkan akurasi klasifikasi dan mengurangi risiko overfitting.</p>
+  <h3> Machine Learning Model and Training History</p>
   <p>Model Information</p>
   <table border="1" cellpadding="8">
     <tr>
