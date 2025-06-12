@@ -63,9 +63,10 @@ Kami telah meningkatkan performa model **EfficientNet-B0** yang telah dilatih se
 ## 🖥️ Front-End & Back-End Overview
 
 ### Front-End
-- Dibangun dengan **JavaScript**, **Tailwind CSS**, dan **Webpack**
+- Dibangun dengan **JavaScript**, dan **Module Bundler Webpack**
 - Fokus pada tampilan responsif dan UI/UX ramah pengguna
 - Menggunakan Figma sebagai tools utama untuk desain antarmuka
+- Melakukan pemanggilan api dengan RestfullApi
 
 ### Back-End
 - Menggunakan framework **Hapi.js**
