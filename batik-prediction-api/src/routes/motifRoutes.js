@@ -1,7 +1,6 @@
-// File: src/routes/motifRoutes.js
 const Joi = require('@hapi/joi');
 const motifController = require('../controllers/motifController');
-// const authMiddleware = require('../middleware/auth');
+
 const motifRoutes = [
   {
     method: 'GET',

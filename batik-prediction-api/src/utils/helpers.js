@@ -4,14 +4,12 @@ const generateRandomString = (length = 32) => {
   return crypto.randomBytes(length).toString('hex');
 };
 
-
 const generateUniqueFilename = (originalName, userId) => {
   const timestamp = Date.now();
   const randomString = generateRandomString(8);
   const extension = originalName.split('.').pop();
   return `${userId}_${timestamp}_${randomString}.${extension}`;
 };
-
 
 const isValidImageType = (filename) => {
   const validExtensions = ['jpg', 'jpeg', 'png', 'gif', 'webp'];

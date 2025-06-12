@@ -1,4 +1,3 @@
-// File: src/routes/authRoutes.js
 const Joi = require('@hapi/joi');
 const authController = require('../controllers/authController');
 const authMiddleware = require('../middleware/auth');

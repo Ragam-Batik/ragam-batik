@@ -1,7 +1,7 @@
 const { s3, bucketName } = require('../config/aws');
 const { v4: uuidv4 } = require('uuid');
 const Boom = require('@hapi/boom');
-const mime = require('mime-types'); // untuk ContentType
+const mime = require('mime-types');
 
 class S3Service {
   async uploadImage(buffer, originalName, userId) {

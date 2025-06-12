@@ -12,9 +12,9 @@ const HTTP_STATUS = {
   SERVICE_UNAVAILABLE: 503
 };
 
-// API Response Messages
+
 const MESSAGES = {
-  // Success messages
+
   SUCCESS: {
     REGISTRATION: 'Registration successful',
     LOGIN: 'Login successful',
@@ -29,7 +29,6 @@ const MESSAGES = {
     SEARCH_COMPLETED: 'Search completed successfully'
   },
   
-  // Error messages
   ERROR: {
     INTERNAL_SERVER: 'Internal server error',
     BAD_REQUEST: 'Bad request',
@@ -38,13 +37,11 @@ const MESSAGES = {
     NOT_FOUND: 'Resource not found',
     VALIDATION_FAILED: 'Validation failed',
     
-    // Auth specific
     INVALID_CREDENTIALS: 'Invalid email or password',
     EMAIL_ALREADY_EXISTS: 'Email already registered',
     TOKEN_INVALID: 'Invalid or expired token',
     TOKEN_MISSING: 'Missing authorization token',
     
-    // File upload specific
     FILE_TOO_LARGE: 'File size too large',
     INVALID_FILE_TYPE: 'Invalid file type',
     FILE_UPLOAD_FAILED: 'File upload failed',
