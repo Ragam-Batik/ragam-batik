@@ -1,7 +1,9 @@
+// File: src/services/motifService.js
 const supabase = require('../config/supabase');
 const Boom = require('@hapi/boom');
 
 class MotifService {
+  // Ambil semua motif (opsional: filter berdasarkan provinsi)
   async getAllMotifs(provinsi = null) {
     try {
       let query = supabase.from('motif_batik').select('*');
@@ -20,6 +22,7 @@ class MotifService {
     }
   }
 
+  // Ambil satu motif berdasarkan ID
   async getMotifById(id) {
     try {
       const { data, error } = await supabase
@@ -40,6 +43,7 @@ class MotifService {
     }
   }
 
+  // Cari motif berdasarkan keyword secara realtime dari Supabase
   async searchMotifs(query, limit = 10) {
     try {
       if (!query || query.trim().length < 2) {
@@ -66,6 +70,7 @@ class MotifService {
     }
   }
 
+  // Kelompokkan motif berdasarkan provinsi
   async getMotifsByProvinsi() {
     try {
       const { data, error } = await supabase
@@ -94,6 +99,7 @@ class MotifService {
     }
   }
 
+  // Ambil list provinsi yang ada di data motif
   async getProvinsiList() {
     try {
       const { data, error } = await supabase
@@ -117,6 +123,7 @@ class MotifService {
     }
   }
 
+  // Ambil motif acak dari database
   async getRandomMotifs(count = 5) {
     try {
       const { data, error } = await supabase
@@ -133,6 +140,7 @@ class MotifService {
     }
   }
 
+  // Ambil motif yang dianggap populer (jika ada link_shop)
   async getPopularMotifs(limit = 10) {
     try {
       const { data, error } = await supabase

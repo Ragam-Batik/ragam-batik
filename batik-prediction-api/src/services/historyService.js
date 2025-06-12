@@ -73,7 +73,6 @@ class HistoryService {
 
   async deleteHistory(historyId, userId) {
     try {
-      // Get history first to get image URL
       const { data: history, error: getError } = await supabase
         .from('scan_histories')
         .select('image_url')
@@ -85,7 +84,6 @@ class HistoryService {
         throw Boom.notFound('History not found');
       }
 
-      // Delete from database
       const { error: deleteError } = await supabase
         .from('scan_histories')
         .delete()
@@ -97,7 +95,6 @@ class HistoryService {
         throw Boom.internal('Failed to delete history');
       }
 
-      // Delete image from S3 (extract key from URL)
       if (history.image_url) {
         try {
           const urlParts = history.image_url.split('.amazonaws.com/');
@@ -107,7 +104,6 @@ class HistoryService {
           }
         } catch (s3Error) {
           console.error('S3 delete error (non-critical):', s3Error);
-          // Don't throw error if S3 delete fails
         }
       }
 
@@ -124,7 +120,7 @@ class HistoryService {
 
   async deleteAllHistory(userId) {
     try {
-      // Get all history to get image URLs
+
       const { data: histories, error: getError } = await supabase
         .from('scan_histories')
         .select('image_url')
@@ -135,7 +131,6 @@ class HistoryService {
         throw Boom.internal('Failed to get history for deletion');
       }
 
-      // Delete from database
       const { error: deleteError } = await supabase
         .from('scan_histories')
         .delete()
@@ -146,7 +141,6 @@ class HistoryService {
         throw Boom.internal('Failed to delete all history');
       }
 
-      // Delete images from S3
       if (histories && histories.length > 0) {
         const deletePromises = histories.map(async (history) => {
           if (history.image_url) {
@@ -158,7 +152,6 @@ class HistoryService {
               }
             } catch (s3Error) {
               console.error('S3 delete error (non-critical):', s3Error);
-              // Continue with other deletions
             }
           }
         });

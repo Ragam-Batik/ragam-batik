@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Mulish', sans-serif; 
+    background-color: #FDF9F6; 
+    color: #333; 
+}
+
+.page-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.hero-section {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    max-width: 1200px; 
+    width: 100%; 
+    padding: 20px; 
+    
+}
+
+@media (max-width: 900px) {
+    .hero-section {
+        flex-direction: column; 
+        text-align: center; 
+        gap: 40px;
+    }
+}
+
+.hero-image-container {
+    flex-shrink: 0; 
+    border-radius: 20px; 
+    padding: 20px 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image {
+    width: 250px; 
+    height: auto; 
+    display: block; 
+}
+
+@media (max-width: 900px) {
+    .hero-image-container {
+        padding: 15px 30px;
+    }
+    .hero-image {
+        width: 180px;
+    }
+}
+
+.hero-content {
+    flex-grow: 1; 
+    max-width: 600px; 
+}
+
+.hero-content h1 {
+    font-size: 1.5em; 
+    color: #FF6554; 
+    margin-bottom: 5px; 
+    font-weight: 600; 
+}
+
+.hero-content h2 {
+    font-size: 3em; 
+    color: #053D4D; 
+    line-height: 1.2; 
+    margin-top: 0;
+    margin-bottom: 0px; 
+    font-weight: 700; 
+}
+
+.hero-content p {
+    font-size: 1em; 
+    line-height: 1.5;
+    color: #555; 
+}
+
+.hero-content p a {
+    color: #E2684F; 
+    text-decoration: none; 
+    font-weight: 600; 
+}
+
+.hero-content p a:hover {
+    text-decoration: underline; 
+}
+
+@media (max-width: 1200px) {
+    .hero-section {
+        gap: 60px;
+        padding: 30px;
+    }
+    .hero-image {
+        width: 200px;
+    }
+    .hero-content h2 {
+        font-size: 3em;
+    }
+    .hero-content p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        gap: 30px;
+        padding: 20px;
+    }
+    .hero-image {
+        width: 150px;
+    }
+    .hero-content h1 {
+        font-size: 1.2em;
+    }
+    .hero-content h2 {
+        font-size: 2.5em;
+    }
+    .hero-content p {
+        font-size: 0.9em;
+    }
+}
+
+.app-header { 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.app-logo img {
+    height: 40px; 
+}
+
+.app-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px; 
+}
+
+.app-navigation ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.app-navigation ul li a:hover {
+    color: #E2684F; 
+}
+
+.app-navigation .sign-up-button {
+    background-color: #E2684F; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px; 
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.app-navigation .sign-up-button:hover {
+    background-color: #C15540; 
+}
+
+@media (max-width: 768px) {
+    .app-header {
+        padding: 15px 20px;
+    }
+    .app-navigation ul {
+        gap: 15px;
+    }
+    .app-navigation ul li a,
+    .app-navigation .sign-up-button {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+}
+
+.hero {
+  background: linear-gradient(135deg, #FFF8F0 0%, #f0e6d9 100%);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  color: var(--primary);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  color: var(--secondary);
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.featured-section {
+  padding: 60px 20px;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 15px;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .featured-section {
+    padding: 40px 15px;
+  }
+}

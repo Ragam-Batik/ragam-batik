@@ -5,41 +5,32 @@ const path = require('path');
 
 class PredictionController {
   async predict(request, h) {
-      try {
-        const { image } = request.payload; // file stream multipart
+    try {
+      const { image } = request.payload;
       const userId = request.auth.user.id;
 
       if (!image || !image.hapi) {
         throw Boom.badRequest('Image file is required');
       }
 
-      const uploadDir = path.join(__dirname, '../uploads');
-
-      // Buat folder uploads jika belum ada
-      if (!fs.existsSync(uploadDir)) {
-        fs.mkdirSync(uploadDir, { recursive: true });
-      }
-
-      const filename = image.hapi.filename || 'upload.tmp';
-      const savePath = path.join(uploadDir, filename);
-
-      // Simpan file sementara
-      const fileStream = fs.createWriteStream(savePath);
+      // Gunakan /tmp agar compatible ketika deploy di AWS Lambda with ECR (read-write allowed)
+      const tempDir = '/tmp';
+      const filename = `${Date.now()}-${image.hapi.filename || 'upload.tmp'}`;
+      const savePath = path.join(tempDir, filename);
 
       await new Promise((resolve, reject) => {
+        const fileStream = fs.createWriteStream(savePath);
         image.pipe(fileStream);
-        image.on('end', () => resolve());
-        image.on('error', (err) => reject(err));
+        image.on('end', resolve);
+        image.on('error', reject);
       });
 
       const imageBuffer = fs.readFileSync(savePath);
 
-      // Panggil service predict
       const result = await predictionService.predict(imageBuffer, userId, filename);
 
-      // Hapus file sementara
       fs.unlink(savePath, (err) => {
-        if (err) console.error('Failed to delete uploaded file:', err);
+        if (err) console.error('Failed to delete temporary file:', err);
       });
 
       return h.response({
@@ -56,9 +47,8 @@ class PredictionController {
             }
           : null
       }).code(result.success ? 200 : 400);
-
     } catch (error) {
-      console.error(error);
+      console.error('Prediction error:', error);
       throw Boom.internal('Failed to process prediction');
     }
   }

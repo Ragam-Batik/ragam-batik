@@ -8,8 +8,6 @@ batik-api/
 │   │   ├── motifController.js
 │   │   ├── historyController.js
 │   │   └── predictionController.js
-│   ├── data/
-│   │   └── dictionary.js
 │   ├── middleware/
 │   │   ├── auth.js
 │   │   └── validation.js
@@ -18,19 +16,17 @@ batik-api/
 │   │   ├── motifRoutes.js
 │   │   ├── historyRoutes.js
 │   │   └── predictionRoutes.js
-│   ├── seed/
-│   │   └── dictionary.js
 │   ├── services/
 │   │   ├── authService.js
 │   │   ├── motifService.js 
 │   │   ├── historyService.js
 │   │   ├── predictionServices.js
 │   │   └── s3Service.js
-│   ├── uploads/
-│   │   └── (Gambar akan disimpan sementara lalu dipush save ke AWS S3)
 │   ├── utils/
 │   │   ├── helpers.js
 │   │   └── constants.js 
+│   ├── data/
+│   │   └── dictionary.js
 │   └── app.js
 ├── sql/
 │   └── schema.sql

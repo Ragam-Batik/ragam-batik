@@ -10,7 +10,7 @@ if (!supabaseUrl || !supabaseKey) {
 const supabase = createClient(supabaseUrl, supabaseKey, {
   auth: {
     autoRefreshToken: true,
-    persistSession: false, // Server-side, tidak perlu persist session
+    persistSession: false,
     detectSessionInUrl: false
   }
 });

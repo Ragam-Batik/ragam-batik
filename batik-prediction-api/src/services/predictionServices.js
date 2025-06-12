@@ -1,6 +1,6 @@
 const tf = require('@tensorflow/tfjs-node');
 const sharp = require('sharp');
-const { data, classLabels, classToKey } = require('../data/dictionary');
+const { data, classLabels, classToKey, correctionMapping } = require('../data/dictionary');
 const s3Service = require('./s3Service');
 const supabase = require('../config/supabase');
 const Boom = require('@hapi/boom');
@@ -8,7 +8,7 @@ const Boom = require('@hapi/boom');
 class PredictionService {
   constructor() {
     this.model = null;
-    this.modelUrl = './model/model.json';
+    this.modelUrl = process.env.MODEL_URL;
     this.confidenceThreshold = 0.7; // 70%
   }
 
@@ -45,6 +45,7 @@ class PredictionService {
     }
   }
 
+  // TAMBAHAN: Function untuk mencari motif di database berdasarkan class name
   async findMotifByClassName(className) {
     try {
       // Convert class name format: "aceh_pintu_aceh" -> "pintu aceh"
@@ -85,16 +86,19 @@ class PredictionService {
       const predictions = await this.model.predict(imageTensor);
       const predictionData = await predictions.data();
 
+      console.log('Raw prediction data:', predictionData);
+      console.log('Class Labels:', classLabels);
+
       const predictedIndex = predictions.argMax(-1).dataSync()[0];
       const confidence = predictionData[predictedIndex];
-
       console.log('Predicted Index:', predictedIndex);
       console.log('Confidence:', confidence);
       console.log('Available classToKey keys:', Object.keys(classToKey));
-
+      
+      
       imageTensor.dispose();
       predictions.dispose();
-
+      
       if (confidence < this.confidenceThreshold) {
         return {
           success: false,
@@ -103,21 +107,23 @@ class PredictionService {
           threshold: Math.round(this.confidenceThreshold * 100)
         };
       }
-
+      
       // Dapatkan class name dari model
-      const motifKey = classToKey[predictedIndex];
+      const motifKey = correctionMapping[predictedIndex] || classToKey[predictedIndex];
+      // const motifKey = classToKey[predictedIndex];
       const predictedClass = classLabels[predictedIndex];
       
       console.log('Motif Key:', motifKey);
       console.log('Predicted Class Name:', predictedClass);
 
-      // Mencari motif di database berdasarkan class name
+      // PERBAIKAN: Cari motif di database berdasarkan class name
       const databaseMotif = await this.findMotifByClassName(motifKey);
       
       let motifData;
       let actualMotifId;
 
       if (databaseMotif) {
+        // Gunakan data dari database
         motifData = databaseMotif;
         actualMotifId = databaseMotif.id;
         console.log('Using database motif ID:', actualMotifId);
@@ -135,7 +141,7 @@ class PredictionService {
 
       const uploadResult = await s3Service.uploadImage(imageBuffer, originalFileName, userId);
 
-      // Conditional insert berdasarkan apakah motif ada di database
+      // PERBAIKAN: Conditional insert berdasarkan apakah motif ada di database
       const historyData = {
         user_id: userId,
         motif_name: motifData.name || predictedClass,
@@ -146,7 +152,7 @@ class PredictionService {
         image_url: uploadResult.url
       };
 
-      // Apabila motif_id jika ada di database
+      // Hanya tambahkan motif_id jika ada di database
       if (actualMotifId) {
         historyData.motif_id = actualMotifId;
       }

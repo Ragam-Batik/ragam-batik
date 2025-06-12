@@ -1,0 +1,157 @@
+.batik-detail-page-container {
+    max-width: 1000px; 
+    margin: 40px auto 60px auto; 
+    border-radius: 8px;
+    display: flex; 
+    flex-direction: column;
+    gap: 40px; 
+}
+
+.detail-content {
+    background-color: #FFF8F0; 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.main-batik-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px; 
+}
+
+.main-batik-image {
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover; 
+    
+}
+
+.main-batik-info h1 {
+    font-size: 2.5em; 
+    color: #053D4D; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-decoration:underline;
+}
+
+.main-batik-info p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333333; 
+    margin-bottom: 10px;
+    text-align: justify;
+    width: 90%;
+}
+
+.main-batik-info p strong {
+    color: #053D4D; 
+    text-align: center;
+}
+
+.main-batik-info a {
+    color: #28a745; 
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.main-batik-info a:hover {
+    color: #053D4D; 
+    text-decoration: underline;
+}
+
+.status-message {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+    color: #333333; 
+    font-weight: 500;
+}
+
+.status-message.error-message {
+    color: #dc3545; 
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    .batik-detail-page-container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .detail-content {
+        padding: 20px;
+    }
+
+    .main-batik-info h1 {
+        font-size: 2em;
+    }
+
+    .main-batik-info p {
+        font-size: 1em;
+    }
+
+    .main-batik-image {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .batik-detail-page-container {
+        padding: 10px;
+    }
+
+    .detail-content {
+        padding: 15px;
+    }
+
+    .main-batik-info h1 {
+        font-size: 1.8em;
+    }
+}
+
+.detail-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.detail-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.detail-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.detail-content {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.detail-section {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .detail-container {
+    margin: 20px auto;
+    padding: 15px;
+  }
+  
+  .detail-content {
+    padding: 20px;
+  }
+}

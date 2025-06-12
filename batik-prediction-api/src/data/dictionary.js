@@ -1,8 +1,8 @@
-// Mapping dari class label ke key
 const classLabels = [
   'aceh_pintu_aceh',
   'bali_barong',
   'bali_merak',
+  'madura_Kateran',
   'dki_jakarta_ondel_ondel',
   'jawa_barat_megamendung',
   'jawa_timur_pring',
@@ -21,34 +21,40 @@ const classLabels = [
   'sumatera_barat_rumah_minang',
   'sumatera_utara_boraspati',
   'yogyakarta_kawung',
+  'classic_yogyakarta_parang',
 ];
 
-// PERBAIKAN: Mapping yang konsisten dengan classLabels array
 const classToKey = {
   0: 'aceh_pintu_aceh',
   1: 'bali_barong',
   2: 'bali_merak',
-  3: 'dki_jakarta_ondel_ondel',  
-  4: 'jawa_barat_megamendung',
-  5: 'jawa_timur_pring',
-  6: 'kalimantan_barat_insang',
-  7: 'kalimantan_dayak',
-  8: 'lampung_gajah',
-  9: 'maluku_pala',
-  10: 'ntb_lumbung',
-  11: 'papua_asmat',
-  12: 'papua_cendrawasih',
-  13: 'papua_tifa',
-  14: 'solo_parang',
-  15: 'solo_sidoluhur',
-  16: 'solo_truntum',
-  17: 'sulawesi_selatan_lontara',
-  18: 'sumatera_barat_rumah_minang',
-  19: 'sumatera_utara_boraspati',
-  20: 'yogyakarta_kawung',
+  3: 'madura_Keteran',
+  4: 'dki_jakarta_ondel_ondel',  
+  5: 'jawa_barat_megamendung',
+  6: 'jawa_timur_pring',
+  7: 'kalimantan_barat_insang',
+  8: 'kalimantan_dayak',
+  9: 'lampung_gajah',
+  10: 'maluku_pala',
+  11: 'ntb_lumbung',
+  12: 'papua_asmat',
+  13: 'papua_cendrawasih',
+  14: 'papua_tifa',
+  15: 'solo_parang',
+  16: 'solo_sidoluhur',
+  17: 'solo_truntum',
+  18: 'sulawesi_selatan_lontara',
+  19: 'sumatera_barat_rumah_minang',
+  20: 'sumatera_utara_boraspati',
+  21: 'yogyakarta_kawung',
+  22: 'classic_yogyakarta_parang',
 };
 
-// Data motif batik lengkap
+const correctionMapping = {
+  22: 'classic_yogyakarta_parang',
+
+};
+
 const data = {
   aceh_pintu_aceh: {
     name: "Batik Pintu Aceh",
@@ -89,6 +95,15 @@ const data = {
     link_shop: "https://www.tokopedia.com/search?st=&q=batik%20merak%20bali",
     link_image:
       "https://www.iwarebatik.org/wp-content/uploads/2019/08/4-1.png",
+  },
+  madura_Keteran: {
+     name: "Batik Madura Mata keteran",
+      provinsi: "Jawa Timur",
+      description: "Batik Madura dengan motif Mata Keteran menggambarkan kehidupan pedesaan Madura yang penuh warna dan keindahan alam. Motif ini sering kali menggunakan warna-warna cerah dan memiliki filosofi yang erat dengan kehidupan agraris dan masyarakat Madura.",
+      occasion: "Batik ini sangat cocok untuk acara pernikahan, acara budaya, atau perayaan di Madura dan sekitarnya.",
+      history: "Berawal dari abad ke-16, dimana pecahnya peperangan di area Pamekasan antara Raden Azhar dan Ke'Lesap. Raden Azhar menggunakan pakaian berupa kain batik motif parang atau leres, dan terlihat gagah dalam memakainya. Hal ini menjadi perbincangan erat oleh masyarakat yang melihatnya berperang sembari mengenakan pakaian tersebut dan akhirnya melahirkan beragam motif batik, salah satunya adalah Mataketeran.",
+      link_shop: "https://www.tokopedia.com/search?st=&q=batik%20mata%20keteran",
+      link_image: "https://ragam-assets.s3.ap-southeast-2.amazonaws.com/motif-batik/Batik+Mata+keteran+Madura.jpg",
   },
   dki_jakarta_ondel_ondel: {
     name: "Batik Ondel Ondel DKI",
@@ -330,10 +345,26 @@ const data = {
     link_image:
       "https://www.iwarebatik.org/wp-content/uploads/2020/01/8.png",
   },
+  classic_yogyakarta_parang: {
+  name: "Batik Parang Yogyakarta",
+  provinsi: "Yogyakarta",
+  description:
+    "Batik Parang adalah salah satu motif batik tertua di Indonesia yang berasal dari Keraton Yogyakarta. Motif ini terdiri dari pola miring berbentuk huruf 'S' yang saling berkesinambungan, melambangkan kekuatan, semangat pantang menyerah, dan kesinambungan hidup.",
+  occasion:
+    "Batik Parang cocok digunakan pada acara resmi, kenegaraan, maupun kegiatan yang bersifat adat dan kebudayaan, terutama yang menjunjung nilai-nilai kepemimpinan dan kekuatan moral.",
+  history:
+    "Motif Parang diciptakan pada masa kerajaan Mataram dan dahulu hanya dikenakan oleh raja serta keluarga bangsawan. Nama 'Parang' berasal dari kata 'pereng' yang berarti lereng atau kemiringan. Motif ini merupakan simbol keteguhan dan perlawanan terhadap hal buruk.",
+  link_shop:
+    "https://www.tokopedia.com/search?st=&q=batik%20parang%20yogyakarta",
+  link_image:
+    "https://www.iwarebatik.org/wp-content/uploads/2019/09/1-8.png",
+},
+
 };
 
 module.exports = {
   data,
   classLabels,
-  classToKey
+  classToKey,
+  correctionMapping
 };

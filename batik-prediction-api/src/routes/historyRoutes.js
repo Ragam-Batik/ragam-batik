@@ -1,4 +1,3 @@
-// File: src/routes/historyRoutes.js
 const Joi = require('@hapi/joi');
 const historyController = require('../controllers/historyController');
 const authMiddleware = require('../middleware/auth');

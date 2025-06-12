@@ -1,4 +1,3 @@
-// File: src/middleware/auth.js
 const Boom = require('@hapi/boom');
 const supabase = require('../config/supabase');
 
@@ -16,7 +15,6 @@ const authMiddleware = async (request, h) => {
       throw Boom.unauthorized('Invalid authorization format');
     }
 
-    // Verify token dengan Supabase
     const { data: { user }, error } = await supabase.auth.getUser(token);
     
     if (error || !user) {
@@ -24,7 +22,6 @@ const authMiddleware = async (request, h) => {
       throw Boom.unauthorized('Invalid or expired token');
     }
 
-    // Attach user info ke request
     request.auth = {
       user: {
         id: user.id,

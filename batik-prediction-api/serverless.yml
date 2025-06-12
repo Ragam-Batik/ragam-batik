@@ -1,0 +1,43 @@
+service: batik-api
+
+provider:
+  name: aws
+  region: ap-southeast-2
+  lambdaHashingVersion: 20201221
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - s3:PutObject
+        - s3:GetObject
+        - s3:DeleteObject
+        - s3:ListBucket
+      Resource:
+        - arn:aws:s3:::batikimage
+        - arn:aws:s3:::batikimage/*
+
+  ecr:
+    images:
+      batikApiImage:
+        uri: ::::323137.dkr.ecr.ap-southeast-z.amazonaws.com/batik-api:latest
+
+  environment:
+    PORT: 3030
+    NODE_ENV: development
+    SUPABASE_URL: ""
+    SUPABASE_ANON_KEY: ""
+    S3_BUCKET_NAME: ""
+    TFJS_MODEL_URL: ""
+    MAX_FILE_SIZE: 5242880
+    ALLOWED_EXTENSIONS: "jpg,jpeg,png"
+
+functions:
+  api:
+    image:
+      name: batikApiImage
+    events:
+      - httpApi:
+          path: /{proxy+}
+          method: ANY
+      - httpApi:
+          path: /
+          method: ANY

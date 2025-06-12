@@ -212,8 +212,6 @@ const validation = {
   },
 
   validateProvinsiName: (provinsi) => {
-    // Add your provinsi validation logic here
-    // This could check against a list of valid Indonesian provinces
     const validProvinsi = [
       'Jawa Barat', 'Jawa Tengah', 'Jawa Timur', 'DKI Jakarta',
       'DI Yogyakarta', 'Banten', 'Sumatera Utara', 'Sumatera Barat',

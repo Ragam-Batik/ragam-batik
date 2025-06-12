@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap');
+
+.auth-page-wrapper {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    min-height: calc(100vh - 90px); 
+    padding: 20px; 
+    box-sizing: border-box;
+    width: 100%; 
+}
+
+.auth-form-container, .signin-container { 
+    background-color: #053D4D; 
+    padding: 60px; 
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 400px; 
+    text-align: center;
+    color: white;
+    margin: auto; 
+    min-height: 400px; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth-form-container h1, .signin-container h1 {
+    margin-bottom: 30px;
+    font-size: clamp(1.8em, 5vw, 2.2em); 
+    font-weight: bold;
+    color: #FFFFFF; 
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: clamp(0.8em, 2.5vw, 0.9em); 
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #E0E0E0;
+    border-radius: 25px; 
+    box-sizing: border-box;
+    font-size: clamp(0.9em, 3vw, 1em); 
+    background-color: white;
+    color: #333;
+    outline: none; 
+    transition: border-color 0.2s ease-in-out;
+}
+
+.input-group input:focus {
+    border-color: #053D4D; 
+}
+
+.action-button, .signin-button { 
+    background-color: #FF6554; 
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 25px; 
+    cursor: pointer;
+    font-size: clamp(1em, 3.5vw, 1.1em); 
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover, .signin-button:hover {
+    background-color: #e65252; 
+}
+
+.auth-link, .signup-link { 
+    margin-top: 15px; 
+    font-size: clamp(0.85em, 2.5vw, 0.9em);
+    color: white; 
+}
+
+.auth-link a, .signup-link a {
+    color: #BB921E; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-link a:hover, .signup-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 0;
+    }
+
+    .auth-page-wrapper {
+        min-height: 100vh; 
+        padding: 15px; 
+    }
+
+    .auth-form-container, .signin-container {
+        padding: 30px; 
+        max-width: 350px; 
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+        margin-top: 20%;
+    }
+
+    .input-group label {
+        font-size: clamp(0.8em, 3vw, 0.9em);
+    }
+    .input-group input {
+        padding: 10px; 
+        font-size: clamp(0.9em, 3.5vw, 1em);
+    }
+
+    .action-button, .signin-button {
+        padding: 10px; 
+        font-size: clamp(0.95em, 4vw, 1.1em);
+    }
+
+    .auth-link, .signup-link {
+        font-size: clamp(0.8em, 3vw, 0.9em);
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-page-wrapper {
+        padding: 10px; 
+    }
+
+    .auth-form-container, .signin-container {
+        padding: 20px; 
+        max-width: 300px; 
+        margin-top: 20%;
+    }
+
+    .auth-form-container h1, .signin-container h1 {
+        font-size: clamp(1.6em, 6vw, 2em); 
+        margin-bottom: 20px;
+    }
+}
