@@ -86,14 +86,7 @@ Performa model ditingkatkan dengan menerapkan beberapa teknik utama:
 
 1.  **Transfer Learning & Fine-Tuning**: Kami menggunakan model **MobileNetV2** yang telah dilatih pada dataset ImageNet sebagai dasar. Seluruh lapisan pada model dasar ini "dibuka" kembali (_unfreeze_) dan dilatih ulang (_fine-tuning_) pada dataset batik untuk menyesuaikan kemampuannya secara spesifik dalam mengenali pola-pola unik batik.
     
-2.  **Augmentasi Data**: Untuk meningkatkan generalisasi model dan mengurangi risiko _overfitting_, kami menerapkan augmentasi data secara ekstensif pada set pelatihan. Teknik yang digunakan meliputi:
-    
-    -   Rotasi (`rotation_range=20`)
-    -   Pergeseran lebar & tinggi (`width_shift_range=0.1`, `height_shift_range=0.1`)
-    -   Zoom (`zoom_range=0.15`)
-    -   Geser (`shear_range=0.15`)
-    -   Balik horizontal (`horizontal_flip=True`)
-    -   Penyesuaian kecerahan (`brightness_range=[0.8, 1.2]`)
+2.  **Augmentasi Data**: Untuk meningkatkan generalisasi model dan mengurangi risiko _overfitting_, kami menerapkan augmentasi data secara ekstensif pada set pelatihan.
 
 3.  **Penanganan Ketidakseimbangan Kelas**: Dataset yang digunakan memiliki jumlah gambar yang tidak merata antar kelas. Untuk mengatasi ini, kami menggunakan `class_weight='balanced'` selama pelatihan agar model tidak bias terhadap kelas mayoritas.
     
@@ -142,6 +135,8 @@ Model dilatih dengan _optimizer_ Adam dan beberapa _callbacks_ seperti `EarlySto
 - Database disimpan melalui **Supabase**
 - Integrasi penyimpanan menggunakan **Amazon S3 (AWS)**
 
+---
+
 # 💻 Tech Stack
 
 <div align="center">
@@ -156,6 +151,8 @@ Model dilatih dengan _optimizer_ Adam dan beberapa _callbacks_ seperti `EarlySto
   <img src="https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=black&style=for-the-badge" height="45" alt="tensorflow logo"/>
   <img src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=for-the-badge" height="45" alt="figma logo"/>
 </div>
+
+---
 
 ## 🔗 Prototype
 
