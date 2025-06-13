@@ -228,7 +228,7 @@ Ikuti langkah-langkah berikut untuk menyiapkan dan menjalankan proyek di lingkun
 ## 🎬 **Demo**
 
 ### **Video Demonstrasi**
-🎥 **[Click Here]** (https://youtu.be/l2XC7pGTpeQ) - Panduan lengkap aplikasi dan showcase fitur
+🎥 [Click Here](https://youtu.be/l2XC7pGTpeQ) - Panduan lengkap aplikasi dan showcase fitur
 
 ---
 
