@@ -1,8 +1,45 @@
-# Ragam Batik
+# Ragam Batik 🧵👘
 
-### Welcome to Ragam Batik 👘
+Selamat datang di Ragam Batik, sebuah platform nirlaba yang didedikasikan untuk mendukung pelestarian warisan budaya Indonesia. Misi kami adalah mempermudah masyarakat dalam mengenali beragam motif batik serta asal daerahnya melalui teknologi machine learning, sehingga budaya batik dapat lebih dikenal, dipelajari, dan dilestarikan oleh generasi masa kini dan yang akan datang.
 
-Sistem klasifikasi citra batik berbasis machine learning yang mampu mengenali jenis batik dan asal daerahnya secara otomatis melalui gambar. Proyek ini merupakan bagian dari capstone project DBS Coding Camp.
+## 🌟 **Mission**
+Memberdayakan masyarakat khusunya generasi muda untuk mengenal dan melestarikan budaya batik Indonesia melalui sebuah platform yang memanfaatkan teknologi machine learning untuk mengidentifikasi motif batik dan asal daerahnya secara otomatis.
+
+## 🧵 Cara Kerja
+
+1. **Unggah Gambar Batik:** Unggah foto batik dari galeri atau kamera Anda.
+
+2. **Deteksi Otomatis:** Sistem memproses gambar dan menampilkan jenis motif serta daerah asalnya.
+
+3. **Pelajari Budayanya:** Lihat informasi lengkap tentang filosofi, sejarah, rekomendasi penggunaannya dan ciri khas motif tersebut.
+
+
+## 🛠 Fitur
+
+- **Antarmuka Ramah Pengguna:** Navigasi yang mudah dan intuitif.
+
+- **Klasifikasi Otomatis:** Didukung model machine learning yang akurat dan terus ditingkatkan.
+
+- **Informasi Edukatif:** Detail tentang makna, sejarah, dan penggunaan di setiap motif batik yang dikenali.
+
+- **Basis Data Berkembang:** Dukungan berbagai motif dari berbagai daerah Indonesia.
+
+## 🤝 Ayo Terlibat
+
+- **Gunakan Aplikasinya:** Coba sistem klasifikasi batik dan eksplorasi budaya Nusantara.
+
+- **Kontribusi Data:** Kirim gambar batik yang belum dikenali untuk membantu pengembangan sistem.
+
+- **Sebarkan Budaya:** Bagikan platform ini dan ajak orang lain untuk ikut melestarikan batik
+
+## 📬 Hubungi Kami  
+Untuk pertanyaan, saran, atau kerja sama:  
+📧 [support@ragambatik.id](mailto:support@ragambatik.id)
+
+## 🙏 Dukung Misi Kami  
+Mari lestarikan kekayaan budaya Indonesia. Gunakan, dukung, dan sebarkan **Ragam Batik** demi batik yang semakin dikenal dunia.
+
+🔗 [Coba Sekarang](https://ragambatik.app)
 
 ---
 
@@ -40,11 +77,9 @@ Kami telah meningkatkan performa model **EfficientNet-B0** yang telah dilatih se
 | **Trainable Params**                        |                  | 164,742    |
 | **Non-trainable Params**                    |                  | 2,257,984  |
 
-![Training History](https://ragam-assets.s3.ap-southeast-2.amazonaws.com/Screenshot+2025-06-05+204539.jpg)
+![Training History](https://ragam-assets.s3.ap-southeast-2.amazonaws.com/Visual.jpg)
 
----
-
-## 💻 Tech Stack
+# 💻 Tech Stack
 
 <div align="center">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge" height="45" alt="javascript logo"/>
