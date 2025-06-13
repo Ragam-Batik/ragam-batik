@@ -82,10 +82,6 @@ dengan menggunakan email tersebut, anda sudah bisa mulai menjelajah perjalanan m
 
 - **Sebarkan Budaya:** Bagikan platform ini dan ajak orang lain untuk ikut melestarikan batik
 
-## 📬 Hubungi Kami  
-Untuk pertanyaan, saran, atau kerja sama:  
-📧 [support@ragambatik.id](mailto:support@ragambatik.id)
-
 ---
 
 ## 👥 Our Team
@@ -189,11 +185,6 @@ Model dilatih dengan _optimizer_ Adam dan beberapa _callbacks_ seperti `EarlySto
 Kunjungi prototipe antarmuka aplikasi kami di Figma:
 <a href="https://www.figma.com/proto/PhZxHOX9Sn2vgI3ryprj7Q/RagamBatik-Capstone?node-id=1058-120&starting-point-node-id=1058%3A120&t=cohs85TAtF1uewDD-1" target="_blank">👉 Klik untuk melihat prototype di Figma</a>
 
-* Penjelasan front-end dan back-end
-* Logo **Figma** dan **JavaScript**
-* Link ke prototype (gantilah link Figma sesuai kebutuhan)
-* Perbaikan struktur dan konsistensi Markdown
-
 ## ▶️ How to Use This App?
 
 Sebelum memulai, pastikan Anda telah menginstal perangkat lunak berikut di komputer Anda:
@@ -246,6 +237,10 @@ Terima kasih khusus kepada:
 - Pengrajin batik dan ahli budaya Indonesia
 - Advisor proyek capstone
 - Beta tester dan early adopter
+
+## 📬 Hubungi Kami  
+Untuk pertanyaan, saran, atau kerja sama:  
+📧 [support@ragambatik.id](mailto:support@ragambatik.id)
 
 ---
 
