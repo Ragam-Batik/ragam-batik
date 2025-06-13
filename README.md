@@ -125,21 +125,6 @@ Model dilatih dengan _optimizer_ Adam dan beberapa _callbacks_ seperti `EarlySto
 
 ![Training History](https://ragam-assets.s3.ap-southeast-2.amazonaws.com/Visual.jpg)
 
-# 💻 Tech Stack
-
-<div align="center">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge" height="45" alt="javascript logo"/>
-  <img src="https://img.shields.io/badge/Webpack-8DD6F9?logo=webpack&logoColor=black&style=for-the-badge" height="45" alt="webpack logo"/>
-  <img src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7" height="45" alt="netlify logo"/>
-  <img src="https://img.shields.io/badge/Hapi.js-%23f06e00?style=for-the-badge&logo=hapi.js&logoColor=white" height="45" alt="hapi logo"/>
-  <img src="https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=black&style=for-the-badge" height="45" alt="supabase logo"/>
-  <img src="https://img.shields.io/badge/Amazon AWS-232F3E?logo=amazonwebservices&logoColor=FF9900&style=for-the-badge" height="45" alt="aws logo"/>
-  <img src="https://img.shields.io/badge/Amazon%20S3-FF9900?style=for-the-badge&logo=amazons3&logoColor=white" height="45" alt="aws logo"/>
-  <img src="https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white&style=for-the-badge" height="45" alt="numpy logo"/>
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=black&style=for-the-badge" height="45" alt="tensorflow logo"/>
-  <img src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=for-the-badge" height="45" alt="figma logo"/>
-</div>
-
 ---
 
 ## 🖥️ Front-End & Back-End Overview
@@ -156,6 +141,21 @@ Model dilatih dengan _optimizer_ Adam dan beberapa _callbacks_ seperti `EarlySto
 - API untuk interaksi dengan model machine learning
 - Database disimpan melalui **Supabase**
 - Integrasi penyimpanan menggunakan **Amazon S3 (AWS)**
+
+# 💻 Tech Stack
+
+<div align="center">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge" height="45" alt="javascript logo"/>
+  <img src="https://img.shields.io/badge/Webpack-8DD6F9?logo=webpack&logoColor=black&style=for-the-badge" height="45" alt="webpack logo"/>
+  <img src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7" height="45" alt="netlify logo"/>
+  <img src="https://img.shields.io/badge/Hapi.js-%23f06e00?style=for-the-badge&logo=hapi.js&logoColor=white" height="45" alt="hapi logo"/>
+  <img src="https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=black&style=for-the-badge" height="45" alt="supabase logo"/>
+  <img src="https://img.shields.io/badge/Amazon AWS-232F3E?logo=amazonwebservices&logoColor=FF9900&style=for-the-badge" height="45" alt="aws logo"/>
+  <img src="https://img.shields.io/badge/Amazon%20S3-FF9900?style=for-the-badge&logo=amazons3&logoColor=white" height="45" alt="aws logo"/>
+  <img src="https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white&style=for-the-badge" height="45" alt="numpy logo"/>
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=black&style=for-the-badge" height="45" alt="tensorflow logo"/>
+  <img src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=for-the-badge" height="45" alt="figma logo"/>
+</div>
 
 ## 🔗 Prototype
 
