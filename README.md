@@ -82,20 +82,46 @@ Mari lestarikan kekayaan budaya Indonesia. Gunakan, dukung, dan sebarkan **Ragam
 
 ### Machine Learning (ML)
 
-Kami telah meningkatkan performa model **EfficientNet-B0** yang telah dilatih sebelumnya dengan menerapkan teknik augmentasi data dan mengintegrasikannya ke dalam arsitektur khusus yang disesuaikan dengan dataset dan tujuan spesifik kami. Model ini mampu meningkatkan akurasi klasifikasi dan mengurangi risiko overfitting.
+Performa model ditingkatkan dengan menerapkan beberapa teknik utama:
 
-### Model Architecture
+1.  **Transfer Learning & Fine-Tuning**: Kami menggunakan model **MobileNetV2** yang telah dilatih pada dataset ImageNet sebagai dasar. Seluruh lapisan pada model dasar ini "dibuka" kembali (_unfreeze_) dan dilatih ulang (_fine-tuning_) pada dataset batik untuk menyesuaikan kemampuannya secara spesifik dalam mengenali pola-pola unik batik.
+    
+2.  **Augmentasi Data**: Untuk meningkatkan generalisasi model dan mengurangi risiko _overfitting_, kami menerapkan augmentasi data secara ekstensif pada set pelatihan. Teknik yang digunakan meliputi:
+    
+    -   Rotasi (`rotation_range=20`)
+    -   Pergeseran lebar & tinggi (`width_shift_range=0.1`, `height_shift_range=0.1`)
+    -   Zoom (`zoom_range=0.15`)
+    -   Geser (`shear_range=0.15`)
+    -   Balik horizontal (`horizontal_flip=True`)
+    -   Penyesuaian kecerahan (`brightness_range=[0.8, 1.2]`)
 
-| Layer (type)                                | Output Shape     | Parameters |
-|---------------------------------------------|------------------|------------|
-| mobilenetv2_1.00_224 (Functional)           | (None, 7, 7, 1280)| 2,257,984  |
-| global_average_pooling2d_1                  | (None, 1280)     | 0          |
-| dense_2                                     | (None, 128)      | 163,968    |
-| dropout_1                                   | (None, 128)      | 0          |
-| dense_3                                     | (None, 6)        | 774        |
-| **Total Params**                            |                  | 2,422,726  |
-| **Trainable Params**                        |                  | 164,742    |
-| **Non-trainable Params**                    |                  | 2,257,984  |
+3.  **Penanganan Ketidakseimbangan Kelas**: Dataset yang digunakan memiliki jumlah gambar yang tidak merata antar kelas. Untuk mengatasi ini, kami menggunakan `class_weight='balanced'` selama pelatihan agar model tidak bias terhadap kelas mayoritas.
+    
+### Arsitektur Model
+
+Model ini terdiri dari **MobileNetV2** sebagai *base model* dan beberapa lapisan kustom (*custom head*) sebagai klasifikator akhir.
+
+| **Lapisan (Tipe)**           | **Output Shape**   | **Keterangan**                                      |
+|-----------------------------|--------------------|-----------------------------------------------------|
+| **MobileNetV2 (Base Model)**| (None, 7, 7, 1280)  | Pengekstrak fitur utama. Seluruhnya *trainable*.    |
+| GlobalAveragePooling2D      | (None, 1280)        | Meringkas fitur menjadi vektor.                     |
+| BatchNormalization          | (None, 1280)        | Menstabilkan pelatihan.                             |
+| Dense / Dropout             | (None, 256)         | Lapisan terhubung penuh dengan regularisasi.        |
+| Dense / Dropout             | (None, 128)         | Lapisan terhubung penuh dengan regularisasi.        |
+| Dense / Dropout             | (None, 128)         | Lapisan terhubung penuh dengan regularisasi.        |
+| **Dense (Output)**          | **(None, 23)**      | Lapisan akhir untuk 23 kelas batik.                 |
+
+**Ringkasan Parameter:**
+
+| **Tipe Parameter**     | **Jumlah**   |
+|------------------------|--------------|
+| **Total Params**       | 2,643,415    |
+| **Trainable Params**   | 2,606,743    |
+| **Non-trainable Params** | 36,672     |
+
+### Hasil Pelatihan & Evaluasi
+
+Model dilatih dengan _optimizer_ Adam dan beberapa _callbacks_ seperti `EarlyStopping` dan `ReduceLROnPlateau` untuk mendapatkan hasil yang optimal.
 
 ![Training History](https://ragam-assets.s3.ap-southeast-2.amazonaws.com/Visual.jpg)
 
