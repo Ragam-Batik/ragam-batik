@@ -11,6 +11,17 @@
 Selamat datang di <b>Ragam Batik</b>, sebuah platform nirlaba yang didedikasikan untuk mendukung pelestarian warisan budaya Indonesia. Misi kami adalah mempermudah masyarakat dalam mengenali beragam motif batik serta asal daerahnya melalui teknologi machine learning, sehingga budaya batik dapat lebih dikenal, dipelajari, dan dilestarikan oleh generasi masa kini dan yang akan datang.
 
 ---
+
+## 🛠 Fitur
+
+- **Antarmuka Ramah Pengguna:** Navigasi yang mudah dan intuitif.
+
+- **Klasifikasi Otomatis:** Didukung model machine learning yang akurat dan terus ditingkatkan.
+
+- **Informasi Edukatif:** Detail tentang makna, sejarah, dan penggunaan di setiap motif batik yang dikenali.
+
+- **Basis Data Berkembang:** Dukungan berbagai motif dari berbagai daerah Indonesia.
+
 ## 🎯 **Visi & Dampak**
 
 ### Misi Kami
@@ -63,16 +74,6 @@ Terkadang, proses pengiriman email konfirmasi dapat memakan waktu lebih lama dar
   * **Password**: `12345678`
 
 dengan menggunakan email tersebut, anda sudah bisa mulai menjelajah perjalanan mu!.
-
-## 🛠 Fitur
-
-- **Antarmuka Ramah Pengguna:** Navigasi yang mudah dan intuitif.
-
-- **Klasifikasi Otomatis:** Didukung model machine learning yang akurat dan terus ditingkatkan.
-
-- **Informasi Edukatif:** Detail tentang makna, sejarah, dan penggunaan di setiap motif batik yang dikenali.
-
-- **Basis Data Berkembang:** Dukungan berbagai motif dari berbagai daerah Indonesia.
 
 ## 🤝 Ayo Terlibat
 
@@ -227,7 +228,7 @@ Ikuti langkah-langkah berikut untuk menyiapkan dan menjalankan proyek di lingkun
 ## 🎬 **Demo**
 
 ### **Video Demonstrasi**
-🎥 **Segera Hadir** - Panduan lengkap aplikasi dan showcase fitur
+🎥 **[Click Here]** (https://youtu.be/l2XC7pGTpeQ) - Panduan lengkap aplikasi dan showcase fitur
 
 ---
 
