@@ -1,17 +1,37 @@
 # Ragam Batik 🧵👘
+> **Preserving Indonesian Heritage Through AI Innovation**
 
-Selamat datang di Ragam Batik, sebuah platform nirlaba yang didedikasikan untuk mendukung pelestarian warisan budaya Indonesia. Misi kami adalah mempermudah masyarakat dalam mengenali beragam motif batik serta asal daerahnya melalui teknologi machine learning, sehingga budaya batik dapat lebih dikenal, dipelajari, dan dilestarikan oleh generasi masa kini dan yang akan datang.
+<div align="center">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" alt="Status"/>
+  <img src="https://img.shields.io/badge/Platform-Web%20App-blue?style=for-the-badge" alt="Platform"/>
+  <img src="https://img.shields.io/badge/AI-Machine%20Learning-orange?style=for-the-badge" alt="AI"/>
+  <img src="https://img.shields.io/badge/License-Open%20Source-yellow?style=for-the-badge" alt="License"/>
+</div>
+<br>
+Selamat datang di <b>Ragam Batik</b>, sebuah platform nirlaba yang didedikasikan untuk mendukung pelestarian warisan budaya Indonesia. Misi kami adalah mempermudah masyarakat dalam mengenali beragam motif batik serta asal daerahnya melalui teknologi machine learning, sehingga budaya batik dapat lebih dikenal, dipelajari, dan dilestarikan oleh generasi masa kini dan yang akan datang.
 
-## 🌟 **Mission**
-Memberdayakan masyarakat khusunya generasi muda untuk mengenal dan melestarikan budaya batik Indonesia melalui sebuah platform yang memanfaatkan teknologi machine learning untuk mengidentifikasi motif batik dan asal daerahnya secara otomatis.
+---
+## 🎯 **Visi & Dampak**
 
+### Misi Kami
+Memberdayakan masyarakat, khususnya generasi muda, untuk mengenal, mempelajari, dan melestarikan budaya batik Indonesia melalui platform cerdas yang secara otomatis mengidentifikasi motif batik dan asal daerahnya.
+
+### Mengapa Ini Penting
+- **Pelestarian Budaya**: Menjaga warisan batik Indonesia yang diakui UNESCO
+- **Edukasi**: Membuat pengetahuan tradisional mudah diakses melalui teknologi
+- **Dampak Ekonomi**: Mendukung pengrajin lokal dan industri batik
+- **Jangkauan Global**: Memperkenalkan budaya Indonesia ke dunia
+
+---
 ## 🧵 Cara Kerja
 
-1. **Unggah Gambar Batik:** Unggah foto batik dari galeri atau kamera Anda.
+1. **Daftar & Masuk:** Buat akun atau login ke platform untuk mulai menggunakan fitur klasifikasi batik.
+   
+2. **Unggah Gambar Batik:** Unggah foto batik dari galeri atau kamera Anda.
 
-2. **Deteksi Otomatis:** Sistem memproses gambar dan menampilkan jenis motif serta daerah asalnya.
+3. **Deteksi Otomatis:** Sistem memproses gambar dan menampilkan jenis motif serta daerah asalnya.
 
-3. **Pelajari Budayanya:** Lihat informasi lengkap tentang filosofi, sejarah, rekomendasi penggunaannya dan ciri khas motif tersebut.
+4. **Pelajari Budayanya:** Lihat informasi lengkap tentang filosofi, sejarah, rekomendasi penggunaannya dan ciri khas motif tersebut.
 
 
 ## 🛠 Fitur
@@ -84,10 +104,11 @@ Kami telah meningkatkan performa model **EfficientNet-B0** yang telah dilatih se
 <div align="center">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge" height="45" alt="javascript logo"/>
   <img src="https://img.shields.io/badge/Webpack-8DD6F9?logo=webpack&logoColor=black&style=for-the-badge" height="45" alt="webpack logo"/>
-  <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?logo=tailwindcss&logoColor=black&style=for-the-badge" height="45" alt="tailwindcss logo"/>
+  <img src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7" height="45" alt="netlify logo"/>
   <img src="https://img.shields.io/badge/Hapi.js-%23f06e00?style=for-the-badge&logo=hapi.js&logoColor=white" height="45" alt="hapi logo"/>
   <img src="https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=black&style=for-the-badge" height="45" alt="supabase logo"/>
   <img src="https://img.shields.io/badge/Amazon AWS-232F3E?logo=amazonwebservices&logoColor=FF9900&style=for-the-badge" height="45" alt="aws logo"/>
+  <img src="https://img.shields.io/badge/Amazon%20S3-FF9900?style=for-the-badge&logo=amazons3&logoColor=white" height="45" alt="aws logo"/>
   <img src="https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white&style=for-the-badge" height="45" alt="numpy logo"/>
   <img src="https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=black&style=for-the-badge" height="45" alt="tensorflow logo"/>
   <img src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=for-the-badge" height="45" alt="figma logo"/>
@@ -190,6 +211,32 @@ dengan menggunakan email tersebut, anda sudah bisa mulai menjelajah perjalanan m
 
 -----
 
-### Demo Video
+## 🎬 **Demo**
 
-**Coming Soon 🎥**
+### **Video Demonstrasi**
+🎥 **Segera Hadir** - Panduan lengkap aplikasi dan showcase fitur
+
+---
+
+## 🙏 **Ucapan Terima Kasih**
+
+Terima kasih khusus kepada:
+- Pengrajin batik dan ahli budaya Indonesia
+- Advisor proyek capstone
+- Beta tester dan early adopter
+
+---
+
+<div align="center">
+
+### **🌟 Dukung Warisan Budaya Indonesia**
+
+**Rasakan keindahan batik melalui teknologi**
+
+[![Coba Sekarang](https://img.shields.io/badge/🚀-Coba%20Ragam%20Batik%20Sekarang-success?style=for-the-badge&logo=rocket)](https://ragambatik.app)
+
+---
+
+*Dibuat dengan ❤️ untuk pelestarian budaya Indonesia*
+
+</div>
