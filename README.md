@@ -143,7 +143,7 @@ Model dilatih dengan _optimizer_ Adam dan beberapa _callbacks_ seperti `EarlySto
 ### Front End & Back End
 
 ### Arsitektur Cloud Of App
-![Arsitektur Cloud](https://ragam-assets.s3.ap-southeast-2.amazonaws.com/Arsitektur+Cloud.jpeg)
+![Arsitektur Cloud](https://ragam-assets.s3.ap-southeast-2.amazonaws.com/Arsitektur+Cloud.jpg)
 
 ---
 
