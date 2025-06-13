@@ -33,6 +33,36 @@ Memberdayakan masyarakat, khususnya generasi muda, untuk mengenal, mempelajari, 
 
 4. **Pelajari Budayanya:** Lihat informasi lengkap tentang filosofi, sejarah, rekomendasi penggunaannya dan ciri khas motif tersebut.
 
+### Membuat Akun & Login
+
+Untuk dapat mengakses fitur lengkap dari aplikasi, Anda perlu membuat akun terlebih dahulu.
+
+1.  **Pilih Menu Signup**
+    Pada halaman utama aplikasi, cari dan klik tombol atau link **"Signup"** yang biasanya terdapat di bagian header atau navigasi.
+
+2.  **Isi Formulir Pendaftaran**
+    Lengkapi semua kolom yang tersedia pada formulir pendaftaran dengan data diri Anda.
+
+3.  **Cek Email Konfirmasi**
+    Buka kotak masuk dari alamat email yang Anda daftarkan. Cari email konfirmasi dari Ragam Batik App.
+
+4.  **Klik Link Konfirmasi**
+    Di dalam email tersebut, Anda akan menemukan link dengan tulisan seperti **"Confirm your mail"**. Klik link tersebut untuk memverifikasi akun Anda.
+
+5.  **Lakukan Sign In Kembali**
+    Setelah akun terverifikasi, kembali ke halaman aplikasi dan lakukan **Sign In** menggunakan email dan password yang telah Anda daftarkan.
+
+6.  **Berhasil**
+    Anda sekarang berhasil login dan dapat menikmati seluruh fitur di Ragam Batik App.
+
+#### Catatan Penting
+
+Terkadang, proses pengiriman email konfirmasi dapat memakan waktu lebih lama dari yang diharapkan. Jika Anda ingin mencoba aplikasi tanpa harus menunggu email konfirmasi, Anda dapat menggunakan akun yang sudah kami siapkan dan verifikasi di bawah ini:
+
+  * **Email**: `ridelaproject@gmail.com`
+  * **Password**: `12345678`
+
+dengan menggunakan email tersebut, anda sudah bisa mulai menjelajah perjalanan mu!.
 
 ## 🛠 Fitur
 
@@ -55,11 +85,6 @@ Memberdayakan masyarakat, khususnya generasi muda, untuk mengenal, mempelajari, 
 ## 📬 Hubungi Kami  
 Untuk pertanyaan, saran, atau kerja sama:  
 📧 [support@ragambatik.id](mailto:support@ragambatik.id)
-
-## 🙏 Dukung Misi Kami  
-Mari lestarikan kekayaan budaya Indonesia. Gunakan, dukung, dan sebarkan **Ragam Batik** demi batik yang semakin dikenal dunia.
-
-🔗 [Coba Sekarang](https://ragambatik.app)
 
 ---
 
@@ -206,37 +231,6 @@ Ikuti langkah-langkah berikut untuk menyiapkan dan menjalankan proyek di lingkun
 7.  **Selesai**
     Sekarang aplikasi siap untuk dijalankan. Anda dapat melanjutkan ke langkah berikutnya untuk membuat akun.
 
-## Membuat Akun & Login
-
-Untuk dapat mengakses fitur lengkap dari aplikasi, Anda perlu membuat akun terlebih dahulu.
-
-1.  **Pilih Menu Signup**
-    Pada halaman utama aplikasi, cari dan klik tombol atau link **"Signup"** yang biasanya terdapat di bagian header atau navigasi.
-
-2.  **Isi Formulir Pendaftaran**
-    Lengkapi semua kolom yang tersedia pada formulir pendaftaran dengan data diri Anda.
-
-3.  **Cek Email Konfirmasi**
-    Buka kotak masuk dari alamat email yang Anda daftarkan. Cari email konfirmasi dari Ragam Batik App.
-
-4.  **Klik Link Konfirmasi**
-    Di dalam email tersebut, Anda akan menemukan link dengan tulisan seperti **"Confirm your mail"**. Klik link tersebut untuk memverifikasi akun Anda.
-
-5.  **Lakukan Sign In Kembali**
-    Setelah akun terverifikasi, kembali ke halaman aplikasi dan lakukan **Sign In** menggunakan email dan password yang telah Anda daftarkan.
-
-6.  **Berhasil**
-    Anda sekarang berhasil login dan dapat menikmati seluruh fitur di Ragam Batik App.
-
-## Catatan Penting
-
-Terkadang, proses pengiriman email konfirmasi dapat memakan waktu lebih lama dari yang diharapkan. Jika Anda ingin mencoba aplikasi tanpa harus menunggu email konfirmasi, Anda dapat menggunakan akun yang sudah kami siapkan dan verifikasi di bawah ini:
-
-  * **Email**: `ridelaproject@gmail.com`
-  * **Password**: `12345678`
-
-dengan menggunakan email tersebut, anda sudah bisa mulai menjelajah perjalanan mu!.
-
 -----
 
 ## 🎬 **Demo**
@@ -261,7 +255,7 @@ Terima kasih khusus kepada:
 
 **Rasakan keindahan batik melalui teknologi**
 
-[![Coba Sekarang](https://img.shields.io/badge/🚀-Coba%20Ragam%20Batik%20Sekarang-success?style=for-the-badge&logo=rocket)](https://ragambatik.app)
+[![Coba Sekarang](https://img.shields.io/badge/🚀-Coba%20Ragam%20Batik%20Sekarang-success?style=for-the-badge&logo=rocket)](https://ragam-batik.netlify.app/)
 
 ---
 
