@@ -118,6 +118,11 @@ Model dilatih dengan _optimizer_ Adam dan beberapa _callbacks_ seperti `EarlySto
 
 ![Training History](https://ragam-assets.s3.ap-southeast-2.amazonaws.com/Visual.jpg)
 
+### Machine Learning (ML)
+
+### Arsitektur Front End & Back End
+![Arsitektur Cloud](https://ragam-assets.s3.ap-southeast-2.amazonaws.com/Arsitektur+Cloud.jpeg)
+
 ---
 
 ## 🖥️ Front-End & Back-End Overview
